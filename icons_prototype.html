@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Tom简历App - 图标原型</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-fluid {
+            width: 90%;
+            height: 80vh;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            display: flex;
+        }
+        .icons-column {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .icons-column.gray {
+            background-color: #f8f9fa;
+            border-right: 1px solid #e0e0e0;
+        }
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .icon-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(0,0,0,0.05);
+        }
+        .bi {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .bi-gray {
+            color: #6c757d;
+        }
+        .bi-blue {
+            color: #3498db;
+        }
+        .icon-label {
+            font-size: 0.6rem;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="icons-column gray">
+            <div class="icon-item">
+                <i class="bi bi-person-circle bi-gray"></i>
+                <span class="icon-label">个人信息</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-mortarboard bi-gray"></i>
+                <span class="icon-label">教育背景</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-briefcase bi-gray"></i>
+                <span class="icon-label">工作经历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-graph-up bi-gray"></i>
+                <span class="icon-label">专业技能</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-journal-code bi-gray"></i>
+                <span class="icon-label">项目经历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-award bi-gray"></i>
+                <span class="icon-label">成就</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-translate bi-gray"></i>
+                <span class="icon-label">语言能力</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-patch-check bi-gray"></i>
+                <span class="icon-label">认证</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-envelope-at bi-gray"></i>
+                <span class="icon-label">联系方式</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-gear bi-gray"></i>
+                <span class="icon-label">设置</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-collection bi-gray"></i>
+                <span class="icon-label">作品集</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-download bi-gray"></i>
+                <span class="icon-label">下载简历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-share bi-gray"></i>
+                <span class="icon-label">分享</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-chat-left-text bi-gray"></i>
+                <span class="icon-label">反馈</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-question-circle bi-gray"></i>
+                <span class="icon-label">帮助</span>
+            </div>
+        </div>
+        <div class="icons-column">
+            <div class="icon-item">
+                <i class="bi bi-person-circle bi-blue"></i>
+                <span class="icon-label">个人信息</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-mortarboard bi-blue"></i>
+                <span class="icon-label">教育背景</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-briefcase bi-blue"></i>
+                <span class="icon-label">工作经历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-graph-up bi-blue"></i>
+                <span class="icon-label">专业技能</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-journal-code bi-blue"></i>
+                <span class="icon-label">项目经历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-award bi-blue"></i>
+                <span class="icon-label">成就</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-translate bi-blue"></i>
+                <span class="icon-label">语言能力</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-patch-check bi-blue"></i>
+                <span class="icon-label">认证</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-envelope-at bi-blue"></i>
+                <span class="icon-label">联系方式</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-gear bi-blue"></i>
+                <span class="icon-label">设置</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-collection bi-blue"></i>
+                <span class="icon-label">作品集</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-download bi-blue"></i>
+                <span class="icon-label">下载简历</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-share bi-blue"></i>
+                <span class="icon-label">分享</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-chat-left-text bi-blue"></i>
+                <span class="icon-label">反馈</span>
+            </div>
+            <div class="icon-item">
+                <i class="bi bi-question-circle bi-blue"></i>
+                <span class="icon-label">帮助</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
